@@ -1,0 +1,16 @@
+<!--Plantilla que pinta los contenidos que se han encontrado según los filtros-->
+{% if organizaciones|length > 0 %}
+	<ul class="organization-list">
+		{% for organizacion in organizaciones %}
+			
+				<li>
+					{% include 'fichaOrganizacionHome.html' %}
+				</li>
+			
+		{% endfor %}
+	</ul>
+
+{% else %}
+	<div class="noContent">No se encuentra organizaciones</div>
+{% endif %}
+

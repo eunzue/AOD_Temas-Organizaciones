@@ -1,0 +1,9 @@
+{% set current_url = request.path() %}
+<section class="socialDataset">
+  <ul>
+    <li><a href="https://www.facebook.com/sharer.php?u={{ current_url }}" target="_blank" title="Compartir en facebook"><img src="http://opendata.aragon.es/public/i/buscaDatos/facebookIcon.png" alt="Facebook"></a></li>
+    <li><a href="https://twitter.com/share?url={{ current_url }}" target="_blank" title="Compartir en twitter"><img src="http://opendata.aragon.es/public/i/buscaDatos/twitterIcon.png" alt="Twitter"></a></li>
+    <li><a href="https://plus.google.com/share?url={{ current_url }}" target="_blank" title="Compartir en Google Plus"><img src="http://opendata.aragon.es/public/i/buscaDatos/googlePlusIcon.png" alt="Google Plus"></a></li>    
+  </ul>
+</section>
+<div class="clear"></div>

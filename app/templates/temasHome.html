@@ -1,0 +1,16 @@
+<!--Plantilla que pinta los temas que se han encontrado según los filtros-->
+{% if temas|length > 0 %}
+	<ul class="tema-list">
+		{% for tema in temas %}
+			
+				<li>
+					{% include 'fichaTemaHome.html' %}
+				</li>
+			
+		{% endfor %}
+	</ul>
+
+{% else %}
+	<div class="noContent">No se encuentra organizaciones</div>
+{% endif %}
+

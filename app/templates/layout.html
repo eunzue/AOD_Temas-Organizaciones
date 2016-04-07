@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Aragón Open Data</title>
+		<meta name="description" content="Campus Open Data. Este es un visualizador del contenido de la web Aragón Open Data ">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+<!--		Metemos los estilos y el favicon-->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+		
+		{% if '/tema/' in request.path or '/organizacion/' in request.path %}
+			<link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon" />
+			<link rel="stylesheet" href="../static/css/main.css" type="text/css">
+<!--			<link rel="stylesheet" href="../static/css/jquery.dataTables.css" media="screen" type="text/css">-->
+		{% else %}
+			<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+			<link rel="stylesheet" href="static/css/main.css" type="text/css">
+		{% endif %}
+		
+		<link rel="stylesheet" href="http://opendata.aragon.es/public/themes/aod/style.css" media="screen" type="text/css" />
+		
+<!--		Fin Metemos los estilos-->
+		</script>
+<!-- Fin Goo Analytics -->
+	</head>
+	<body>
+<!--		Metemos el header-->
+		{% include 'header.html' %}
+		<div id="content" style="max-width: 980px; height: auto;  margin: auto;">
+			{% block content %}{% endblock %}
+		</div>
+<!--		Metemos el footer-->
+		{% include 'footer.html' %}
+<!--		Metemos los scripts-->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36118896-2']);
+			_gaq.push(['_setDomainName', 'aragon.es']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https:/'+'/' : 'http:/'+'/') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+		
+		{% if '/tema/' in request.path or '/organizacion/' in request.path %}
+			<script type="text/javascript" src="../static/js/jquery-1.12.1.min.js"></script>
+			<script type="text/javascript" src="../static/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" src="../static/js/main.js"></script>
+			<script type="text/javascript" src="../static/js/responsive.js"></script>
+			
+		{% else %}
+			<script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+			<script type="text/javascript" src="static/js/main.js"></script>
+			<script type="text/javascript" src="static/js/responsive.js"></script>
+		{% endif %}
+		
+		
+
+		
+		
+	</body>
+</html>
+

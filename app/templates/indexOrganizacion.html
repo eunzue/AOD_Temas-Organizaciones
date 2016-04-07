@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="indiceOrganizacion">
+	<h1>ORGANIZACIONES ARAGÓN OPEN DATA</h1>
+	
+	<div class="indexTexto">En Campus Open Data queremos que tengas a mano toda la información que hemos ido generando a lo largo del tiempo. Nuestra intención es que la información sirva para que te puedas formar y que los materiales sean tutoriales para entender qué son los datos abiertos y cómo los datos abiertos sirven para fomentar la economía digital y mejorar la transparencia del Gobierno.
+	
+	Tenemos materiales de todo tipo: vídeos, presentaciones, infografías y hasta un curso completo de iniciación a Open Data. Te invitamos a que pruebes lo que más te interese</div>
+
+
+	<div class="indexTexto">¡Encuentra el contenido que más te apasione!</div>
+	
+	
+	<div class="huecoInicioPagina"></div>
+	
+	
+	<div class="resultadosOrganizaciones">
+		{% include 'organizacionesHome.html' %}
+	</div>
+</div>
+<div class="huecoInicioPagina"></div>
+
+
+{% endblock %}
