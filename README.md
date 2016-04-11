@@ -50,7 +50,6 @@ AOD_Rules/bin/pip install requisites/Jinja2-2.8.tar.gz
 AOD_Rules/bin/pip install requisites/wsgiref-0.1.2.zip
 AOD_Rules/bin/pip install requisites/Flask-0.10.1.tar.gz
 AOD_Rules/bin/pip install requisites/psycopg2-2.6.1.tar.gz
-AOD_Rules/bin/pip install requisites/flask-paginate-master.zip
 
 ```
 
